@@ -1,0 +1,144 @@
+:root
+{
+    --text1: #888;
+    --back1: #222;
+}
+
+
+body
+{
+    font-family: "Consolas";
+    background-color: var(--back1);
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+#game
+{
+
+    height: 99.7%;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+
+#topbar
+{
+    height: 8%;
+    background-color: #000;
+    border-bottom: 1px solid #888;
+    border-image: url("border.png") 10 round;
+    border-image-repeat: repeat;
+    border-image-width: auto;
+}
+#topbar span
+{
+    margin-left: 10px;
+    color: #888;
+    font-size: 18px;
+    top: 30%;
+    position: relative;
+}
+#focus
+{
+    height: 65%;
+    background-color: #000;
+    perspective: 100px;
+
+}
+#bottombar
+{
+    height: 27%;
+    width: 100%;
+    background-color: #000;
+}
+#cards
+{
+    width: auto;
+    height: auto;
+    padding-top: 1%;
+}
+#field
+{
+    width: 80%;
+    position: relative;
+    top: 25%;
+    margin: 0px auto;
+    transform: rotateX(7deg);
+
+}
+
+.row
+{
+    width: auto;
+    height: 100px;
+    margin-top: 50px;
+}
+.row:first-child{
+    margin-top: 0px;
+    border: none;
+}
+#field .card
+{
+    height: 100%;
+    font-size: 14px;
+}
+#field .card .desc
+{
+    color: #555;
+}
+#field .card .stat
+{
+    color: #888;
+}
+.card
+{
+    
+    padding: 5px;
+    width: 28%;
+    height: 90%;
+    float: left;
+    margin-left: 1%;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+.card .name
+{
+    text-align: center;
+    color: #aaa;
+    background-color: #000;
+}
+.card.empty
+{
+    border: 1px solid #222;
+}
+.card .name.enemy
+{
+    color:#aaa;
+}
+.card.enemy
+{
+    border-color: rgb(48, 0, 0);
+    border-image: linear-gradient(to bottom right,rgb(0, 255, 64),rgb(16, 134, 26)) 40;
+    border-image-repeat: stretch;
+    border-image-width: 1px;
+}
+.card .icon
+{
+    background-color: #000;
+    height: 50%;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.card .desc
+{
+    color: #888;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.card .stat
+{
+    background-color: #000;
+    color: #555;
+    padding-left: 0px;
+}
